@@ -1,0 +1,8 @@
+<ul class="list-group">
+    <div>{{user2.username}}</div>
+    <ul class="list-group">
+        {{#each user2.travels}}
+        <li class="list-group-item">From: {{this.origin}}, To: {{this.destination}}. {{this.date}} with {{this.changes}} changes. Price: {{this.cost}} </li>
+        {{/each}}
+    </ul>
+</ul>

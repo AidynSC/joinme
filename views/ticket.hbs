@@ -1,0 +1,58 @@
+<div class="somemistake">
+
+</div>
+    <div class = 'choosing'>
+        <form>
+            <div class="form-group">
+                <span>Валюта:</span>
+                <select class="currency form-control" name="currency">
+                    <option disabled>Выберите валюту</option>
+                    <option selected value="rub" name="rub">Рубль</option>
+                    <option value="dollar" name="dollar">Доллар</option>
+                    <option value="euro" name="euro">Евро</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label >Пункт отправления:<b>*</b></label>
+                <input class="origin form-control" type="text" name="origin" />
+            </div>
+            <div class="form-group">
+                <label>Пункт назначения:<b>*</b></label>
+                <input class="destination form-control" type="text" name="destination" />
+            </div>
+            <div class="form-group">
+                <label>Первое число месяца, в который попадают даты отправления:<b>*</b></label>
+                <input class="beginning_of_period form-control" type="date" name="beginning_of_period" />
+            </div>
+            <div class="form-group">
+                <select class="one_way form-control" name="one_way">
+                    <option selected value="true" name="oneway">В одну сторону</option>
+                    <option value="false" name="twoway">Туда-обратно</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Количество записей на странице:</label>
+                <input class="limit form-control" type="number" value="30" name="limit" />
+            </div>
+            <div class="form-group">
+                <span>Сортировка по:</span>
+                <select class="sorting form-control" name="sorting">
+                    <option disabled>Выберите валюту</option>
+                    <option selected value="price" name="price">цене</option>
+                    <option value="route" name="route">по популярности маршрута</option>
+                    <option value="distance_unit_price" name="distance_unit_price">по цене за километр</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>длительность пребывания в неделях:</label>
+                <input class="trip_duration form-control" type="number" name="trip_duration" />
+            </div>
+            <div>
+                <button type="submit" class="chooseticket btn btn-dark">Choose</button>
+            </div>
+        </form>
+    </div>
+
+<div class="finalresults">
+
+</div>

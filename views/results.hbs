@@ -1,0 +1,6 @@
+<h1>Available tickets</h1>
+<ul class="list-group">
+    {{#each tickets}}
+        <li class="list-group-item"><a href={{this.origin}}/{{this.destination}}/{{this.depart_date}}/{{this.number_of_changes}}/{{this.value}}>Flight from {{this.origin}} to {{this.destination}} {{this.depart_date}} with {{this.number_of_changes}} changes. Price: {{this.value}}</a></li>
+    {{/each}}
+</ul>
